@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
       <Button>Click me!</Button>
+      <p>Check</p>
     </div>
   );
 };
