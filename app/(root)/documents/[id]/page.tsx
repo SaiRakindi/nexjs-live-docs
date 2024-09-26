@@ -1,4 +1,5 @@
 import Header from "@/components/ui/Header";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import React from "react";
 
 const Document = () => {
@@ -9,6 +10,14 @@ const Document = () => {
           <p className="document-title">This is a fake document title</p>
         </div>
       </Header>
+
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
   );
 };
